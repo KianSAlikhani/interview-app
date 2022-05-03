@@ -1,0 +1,19 @@
+<div id="home-wrapper">
+  <div id="home-header">
+    <h1>My Notes</h1>
+    <button disabled>Add Note</button>
+    <!-- TODO: Implement Adding Notes -->
+  </div>
+
+  <div id="notes-wrapper">
+    <div class="note" *ngFor="let note of notes">
+      <h3>{{ note.title }}</h3>
+      <p>{{ note.body }}</p>
+      <div>
+        <span>{{ note.userId }}</span>
+        -
+        <span>{{ note.date | date }}</span>
+      </div>
+    </div>
+  </div>
+</div>
